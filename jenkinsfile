@@ -14,8 +14,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/lakshmansrikanth123/k8s_dep.git']])
-            }
+              checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/varsha-0411/k8s-dep.git']])            }
         }
 
         stage('Build WAR File') {
